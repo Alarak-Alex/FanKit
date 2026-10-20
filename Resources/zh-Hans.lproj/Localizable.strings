@@ -124,3 +124,10 @@
 /* 内置预设 */
 "Balanced" = "均衡";
 "Quiet" = "安静";
+
+/* 启动 */
+"Startup" = "启动";
+"Start FanKit at login" = "登录时启动 FanKit";
+"Start minimized to the menu bar" = "启动时最小化到菜单栏";
+"When FanKit starts at login, open only the menu bar item."
+    = "登录启动时只显示菜单栏图标，不打开主窗口。";

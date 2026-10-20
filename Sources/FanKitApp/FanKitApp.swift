@@ -24,7 +24,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         StatusItemController.shared.install()
         Task { @MainActor in
             FanStore.shared.start()
-            MainWindowController.shared.show()
+            // Starting at login is a tray-first experience: the dashboard only
+            // opens when the user asks for it.
+            let startMinimized = UserDefaults.standard.bool(forKey: "startMinimized")
+            if !(LoginItem.wasLaunchedAtLogin && startMinimized) {
+                MainWindowController.shared.show()
+            }
         }
     }
 

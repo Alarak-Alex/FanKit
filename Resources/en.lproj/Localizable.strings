@@ -124,3 +124,10 @@
 /* Built-in presets */
 "Balanced" = "Balanced";
 "Quiet" = "Quiet";
+
+/* Startup */
+"Startup" = "Startup";
+"Start FanKit at login" = "Start FanKit at login";
+"Start minimized to the menu bar" = "Start minimized to the menu bar";
+"When FanKit starts at login, open only the menu bar item."
+    = "When FanKit starts at login, open only the menu bar item.";

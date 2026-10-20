@@ -34,6 +34,7 @@ struct SettingsView: View {
                 Section(L10n.string("Sensors")) {
                     Toggle(L10n.string("List every temperature sensor"), isOn: $showAllSensors)
                 }
+                StartupSettings()
             }
             .formStyle(.grouped)
             .tabItem { Label(L10n.string("General"), systemImage: "gear") }
@@ -44,7 +45,40 @@ struct SettingsView: View {
             AboutPane()
                 .tabItem { Label(L10n.string("About"), systemImage: "info.circle") }
         }
-        .frame(width: 460, height: 330)
+        .frame(width: 460, height: 470)
+    }
+}
+
+/// Start at login, and open straight to the menu bar when it does.
+struct StartupSettings: View {
+    @AppStorage("startMinimized") private var startMinimized = true
+    @State private var launchesAtLogin = LoginItem.isEnabled
+    @State private var errorMessage: String?
+
+    var body: some View {
+        Section(L10n.string("Startup")) {
+            Toggle(L10n.string("Start FanKit at login"), isOn: $launchesAtLogin)
+                .onChange(of: launchesAtLogin) { _, newValue in
+                    do {
+                        try LoginItem.setEnabled(newValue)
+                        errorMessage = nil
+                    } catch {
+                        errorMessage = "\(error)"
+                        launchesAtLogin = LoginItem.isEnabled
+                    }
+                }
+
+            Toggle(L10n.string("Start minimized to the menu bar"), isOn: $startMinimized)
+                .disabled(!launchesAtLogin)
+                .help(L10n.string("When FanKit starts at login, open only the menu bar item."))
+
+            if let errorMessage {
+                Text(errorMessage)
+                    .font(.system(size: 10))
+                    .foregroundStyle(.orange)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
     }
 }
 
