@@ -105,8 +105,8 @@
 "Remove Helper" = "移除辅助进程";
 "A native fan controller for Apple Silicon."
     = "面向 Apple Silicon 的原生风扇控制器。";
-"An independent implementation. Macs Fan Control is a separate product by CrystalIDEA."
-    = "独立实现。Macs Fan Control 是 CrystalIDEA 的独立产品。";
+"Built with SwiftUI on Apple's public system interfaces."
+    = "使用 SwiftUI 与 Apple 公开的系统接口构建。";
 "Version %@ (%@)" = "版本 %@ (%@)";
 "About FanKit" = "关于 FanKit";
 "Quit FanKit" = "退出 FanKit";

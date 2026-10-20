@@ -1,7 +1,6 @@
 # FanKit
 
-A native SwiftUI fan controller for Apple Silicon Macs, built as a clean-room
-reimplementation of the ideas behind Macs Fan Control.
+A native SwiftUI fan controller for Apple Silicon Macs.
 
 FanKit reads the SMC and the HID thermal sensors directly through IOKit, shows
 live temperatures in the menu bar, and lets a small privileged helper drive fan
@@ -15,7 +14,7 @@ localisation, and no third-party dependencies.
 - Live CPU average, hottest sensor, and total airflow, refreshed every second.
 - 40 thermal sensors grouped by subsystem on Apple Silicon.
 - Per-fan control: automatic, constant speed, or a temperature curve.
-- Named presets that import and export Macs Fan Control's preset string format.
+- Named presets with an import and export string format.
 - Menu-bar readout with a two-line temperature/RPM display and a popover panel.
 - A launchd helper that restores automatic control if the app stops responding.
 
@@ -75,5 +74,4 @@ the machine run hot. Start conservatively and watch the temperatures.
 
 ## Licence
 
-MIT. Macs Fan Control is a separate product by CrystalIDEA; FanKit shares no code
-with it and reimplements documented and observed behaviour only.
+MIT. See `LICENSE`.

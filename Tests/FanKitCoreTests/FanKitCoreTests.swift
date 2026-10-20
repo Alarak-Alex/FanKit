@@ -110,7 +110,7 @@ struct FanControlTests {
 
 @Suite("Preset persistence")
 struct PresetTests {
-    @Test func serializesLikeMacsFanControl() {
+    @Test func serializesToTheWireFormat() {
         let preset = FanPreset(name: "UNSAVED",
                                modes: [.sensor(.init(sensorID: "cpu_core_average",
                                                      startCelsius: 58,
@@ -118,7 +118,7 @@ struct PresetTests {
         #expect(preset.serialized == "VU5TQVZFRHwyLGNwdV9jb3JlX2F2ZXJhZ2UsNTgsODA=")
     }
 
-    @Test func parsesTheOriginalWireFormat() {
+    @Test func parsesTheWireFormat() {
         let preset = FanPreset(serialized: "VU5TQVZFRHwyLGNwdV9jb3JlX2F2ZXJhZ2UsNTgsODA=")
         #expect(preset?.name == "UNSAVED")
         #expect(preset?.modes.count == 1)

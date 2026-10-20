@@ -167,8 +167,7 @@ struct AboutPane: View {
             Text(L10n.string("A native fan controller for Apple Silicon."))
                 .font(.system(size: 11))
                 .foregroundStyle(.secondary)
-            Text(L10n.string("An independent implementation. "
-                             + "Macs Fan Control is a separate product by CrystalIDEA."))
+            Text(L10n.string("Built with SwiftUI on Apple's public system interfaces."))
                 .font(.system(size: 10))
                 .foregroundStyle(.tertiary)
                 .multilineTextAlignment(.center)

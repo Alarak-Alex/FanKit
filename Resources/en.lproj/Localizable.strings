@@ -105,8 +105,8 @@
 "Remove Helper" = "Remove Helper";
 "A native fan controller for Apple Silicon."
     = "A native fan controller for Apple Silicon.";
-"An independent implementation. Macs Fan Control is a separate product by CrystalIDEA."
-    = "An independent implementation. Macs Fan Control is a separate product by CrystalIDEA.";
+"Built with SwiftUI on Apple's public system interfaces."
+    = "Built with SwiftUI on Apple's public system interfaces.";
 "Version %@ (%@)" = "Version %@ (%@)";
 "About FanKit" = "About FanKit";
 "Quit FanKit" = "Quit FanKit";
