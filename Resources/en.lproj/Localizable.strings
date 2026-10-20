@@ -1,0 +1,126 @@
+/* FanKit — English (base) strings. Keys are the English text. */
+
+/* Sensor groups */
+"CPU" = "CPU";
+"GPU" = "GPU";
+"Memory" = "Memory";
+"Storage" = "Storage";
+"Power" = "Power";
+"Battery" = "Battery";
+"Ambient" = "Ambient";
+"Other" = "Other";
+
+/* Fan control modes */
+"Automatic" = "Automatic";
+"Constant" = "Constant";
+"Sensor" = "Sensor";
+"Manual" = "Manual";
+"SMC" = "SMC";
+"%d rpm" = "%d rpm";
+
+/* Dashboard */
+"Fans" = "Fans";
+"Sensors" = "Sensors";
+"Fan control" = "Fan control";
+"Take over the fans with the active preset" = "Take over the fans with the active preset";
+"Install the privileged helper to enable fan control" = "Install the privileged helper to enable fan control";
+"Hottest" = "Hottest";
+"Total airflow" = "Total airflow";
+"%d fan" = "%d fan";
+"%d fans" = "%d fans";
+"%d sensor" = "%d sensor";
+"%d sensors" = "%d sensors";
+"%d fans · %d sensors" = "%d fans · %d sensors";
+"Preset: %@" = "Preset: %@";
+"macOS is controlling the fans" = "macOS is controlling the fans";
+"No fans detected" = "No fans detected";
+"No temperature sensors" = "No temperature sensors";
+"Live" = "Live";
+"Connecting" = "Connecting";
+"Connecting to AppleSMC…" = "Connecting to AppleSMC…";
+"updated %@" = "updated %@";
+"Helper: %@" = "Helper: %@";
+"Install" = "Install";
+"Reconnect" = "Reconnect";
+"Reinstall" = "Reinstall";
+"Save Current as Preset…" = "Save Current as Preset…";
+"Save preset" = "Save preset";
+"Preset name" = "Preset name";
+"Cancel" = "Cancel";
+"Save" = "Save";
+"Stores the control mode of every fan under a name you can recall from the menu."
+    = "Stores the control mode of every fan under a name you can recall from the menu.";
+"This Mac reports no controllable fans through AppleSMC."
+    = "This Mac reports no controllable fans through AppleSMC.";
+"Waiting for the SMC connection." = "Waiting for the SMC connection.";
+"The HID sensor service did not return any readings."
+    = "The HID sensor service did not return any readings.";
+"Reported by the Apple Silicon thermal telemetry"
+    = "Reported by the Apple Silicon thermal telemetry";
+
+/* Thermal descriptions */
+"Cool" = "Cool";
+"Normal" = "Normal";
+"Warm" = "Warm";
+"Hot" = "Hot";
+"Very hot" = "Very hot";
+
+/* Fan row */
+"The SMC keeps this fan at the speed macOS asks for."
+    = "The SMC keeps this fan at the speed macOS asks for.";
+"Speed" = "Speed";
+"Curve" = "Curve";
+"Start" = "Start";
+"Max" = "Max";
+"rpm range" = "rpm range";
+"target %d" = "target %d";
+
+/* Menu bar */
+"Temperature" = "Temperature";
+"Fan speed" = "Fan speed";
+"Both" = "Both";
+"Controlling · %@" = "Controlling · %@";
+"macOS thermal control" = "macOS thermal control";
+"CPU average · %d sensors" = "CPU average · %d sensors";
+"Details" = "Details";
+"Open FanKit" = "Open FanKit";
+"Quit FanKit and release the fans" = "Quit FanKit and release the fans";
+"CPU average" = "CPU average";
+"Hottest sensor" = "Hottest sensor";
+
+/* Settings */
+"General" = "General";
+"Helper" = "Helper";
+"About" = "About";
+"Menu bar" = "Menu bar";
+"Show" = "Show";
+"Two lines (value and fan speed)" = "Two lines (value and fan speed)";
+"List every temperature sensor" = "List every temperature sensor";
+"Status" = "Status";
+"Install path" = "Install path";
+"FanKit writes fan speeds through a small background service. It runs as root because the SMC only accepts writes from an administrator process. Installing asks for your password once."
+    = "FanKit writes fan speeds through a small background service. It runs as root because the SMC only accepts writes from an administrator process. Installing asks for your password once.";
+"Install Helper…" = "Install Helper…";
+"Reinstall Helper…" = "Reinstall Helper…";
+"Remove Helper" = "Remove Helper";
+"A native fan controller for Apple Silicon."
+    = "A native fan controller for Apple Silicon.";
+"An independent implementation. Macs Fan Control is a separate product by CrystalIDEA."
+    = "An independent implementation. Macs Fan Control is a separate product by CrystalIDEA.";
+"Version %@ (%@)" = "Version %@ (%@)";
+"About FanKit" = "About FanKit";
+"Quit FanKit" = "Quit FanKit";
+"Language" = "Language";
+"System Default" = "System Default";
+"Relaunch Now" = "Relaunch Now";
+"FanKit restarts to apply the new language." = "FanKit restarts to apply the new language.";
+
+/* Helper state */
+"Checking…" = "Checking…";
+"Not installed" = "Not installed";
+"Installed, not responding" = "Installed, not responding";
+"Connected" = "Connected";
+
+/* Built-in presets */
+"Balanced" = "Balanced";
+"Quiet" = "Quiet";

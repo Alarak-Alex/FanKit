@@ -1,0 +1,126 @@
+/* FanKit — 简体中文 */
+
+/* 传感器分组 */
+"CPU" = "CPU";
+"GPU" = "GPU";
+"Memory" = "内存";
+"Storage" = "存储";
+"Power" = "供电";
+"Battery" = "电池";
+"Ambient" = "环境";
+"Other" = "其他";
+
+/* 风扇控制模式 */
+"Automatic" = "自动";
+"Constant" = "定速";
+"Sensor" = "传感器";
+"Manual" = "手动";
+"SMC" = "系统";
+"%d rpm" = "%d 转/分";
+
+/* 主窗口 */
+"Fans" = "风扇";
+"Sensors" = "传感器";
+"Fan control" = "风扇控制";
+"Take over the fans with the active preset" = "用当前预设接管风扇";
+"Install the privileged helper to enable fan control" = "安装辅助进程后才能接管风扇";
+"Hottest" = "最高温";
+"Total airflow" = "总转速";
+"%d fan" = "%d 个风扇";
+"%d fans" = "%d 个风扇";
+"%d sensor" = "%d 个传感器";
+"%d sensors" = "%d 个传感器";
+"%d fans · %d sensors" = "%d 个风扇 · %d 个传感器";
+"Preset: %@" = "预设：%@";
+"macOS is controlling the fans" = "当前由 macOS 控制系统风扇";
+"No fans detected" = "未检测到风扇";
+"No temperature sensors" = "没有温度传感器";
+"Live" = "实时";
+"Connecting" = "连接中";
+"Connecting to AppleSMC…" = "正在连接 AppleSMC…";
+"updated %@" = "更新于 %@";
+"Helper: %@" = "辅助进程：%@";
+"Install" = "安装";
+"Reconnect" = "重新连接";
+"Reinstall" = "重新安装";
+"Save Current as Preset…" = "将当前设置存为预设…";
+"Save preset" = "保存预设";
+"Preset name" = "预设名称";
+"Cancel" = "取消";
+"Save" = "保存";
+"Stores the control mode of every fan under a name you can recall from the menu."
+    = "把每个风扇的控制方式保存成一个名称，之后可从菜单里直接切换。";
+"This Mac reports no controllable fans through AppleSMC."
+    = "这台 Mac 通过 AppleSMC 没有报告任何可控制的风扇。";
+"Waiting for the SMC connection." = "正在等待 SMC 连接。";
+"The HID sensor service did not return any readings."
+    = "HID 传感器服务没有返回任何读数。";
+"Reported by the Apple Silicon thermal telemetry"
+    = "数据来自 Apple Silicon 的芯片温度传感器";
+
+/* 温度状态 */
+"Cool" = "凉爽";
+"Normal" = "正常";
+"Warm" = "偏热";
+"Hot" = "很热";
+"Very hot" = "过热";
+
+/* 风扇行 */
+"The SMC keeps this fan at the speed macOS asks for."
+    = "由系统温控自动决定这个风扇的转速。";
+"Speed" = "转速";
+"Curve" = "曲线";
+"Start" = "起始";
+"Max" = "满载";
+"rpm range" = "转速范围";
+"target %d" = "目标 %d";
+
+/* 菜单栏 */
+"Temperature" = "温度";
+"Fan speed" = "转速";
+"Both" = "两者";
+"Controlling · %@" = "控制中 · %@";
+"macOS thermal control" = "macOS 温控";
+"CPU average · %d sensors" = "CPU 平均 · %d 个传感器";
+"Details" = "详情";
+"Open FanKit" = "打开 FanKit";
+"Quit FanKit and release the fans" = "退出 FanKit 并把风扇交还系统";
+"CPU average" = "CPU 平均";
+"Hottest sensor" = "最高温传感器";
+
+/* 设置 */
+"General" = "通用";
+"Helper" = "辅助进程";
+"About" = "关于";
+"Menu bar" = "菜单栏";
+"Show" = "显示";
+"Two lines (value and fan speed)" = "两行显示（数值与转速）";
+"List every temperature sensor" = "列出全部温度传感器";
+"Status" = "状态";
+"Install path" = "安装路径";
+"FanKit writes fan speeds through a small background service. It runs as root because the SMC only accepts writes from an administrator process. Installing asks for your password once."
+    = "FanKit 通过一个后台小服务写入风扇转速。该服务以 root 身份运行，因为 SMC 只接受管理员进程的写入。安装时需要输入一次密码。";
+"Install Helper…" = "安装辅助进程…";
+"Reinstall Helper…" = "重新安装辅助进程…";
+"Remove Helper" = "移除辅助进程";
+"A native fan controller for Apple Silicon."
+    = "面向 Apple Silicon 的原生风扇控制器。";
+"An independent implementation. Macs Fan Control is a separate product by CrystalIDEA."
+    = "独立实现。Macs Fan Control 是 CrystalIDEA 的独立产品。";
+"Version %@ (%@)" = "版本 %@ (%@)";
+"About FanKit" = "关于 FanKit";
+"Quit FanKit" = "退出 FanKit";
+"Language" = "语言";
+"System Default" = "跟随系统";
+"Relaunch Now" = "立即重启";
+"FanKit restarts to apply the new language." = "FanKit 将重启以应用新的语言。";
+
+/* 辅助进程状态 */
+"Checking…" = "检查中…";
+"Not installed" = "未安装";
+"Installed, not responding" = "已安装，无响应";
+"Connected" = "已连接";
+
+/* 内置预设 */
+"Balanced" = "均衡";
+"Quiet" = "安静";
